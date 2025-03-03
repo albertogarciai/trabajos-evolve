@@ -1,0 +1,51 @@
+# Esto se considera pseudocodigo, ya que son las ideas principales y la distribucion de la idea, sin codigo real.
+# PK = primary key o clave primaria
+# FK = foreing key o clave foranea
+
+T_ALUMNOS:
+id_alumno --> PK
+nombre
+email
+telefono
+
+T_PROFESORES:
+id_profesor --> PK
+nombre_profesor
+email_profesor
+telefono_profesor
+
+T_CURSOS:
+id_curso  --> PK
+categoria_curso (ej. master o programa)
+subcategoria_curso (ej. IA o Ciberseguridad)
+modulo_curso
+fecha_inicio
+fecha_fin
+id_profesor --> FK T_PROFESORES
+
+T_MATRICULAS:
+id_matricula --> PK
+id_curso --> FK T_CURSOS
+id_alumno --> FK T_ALUMNOS
+precio
+
+T_CLASE:
+id_clase --> PK
+id_curso --> FK T_CURSOS
+fecha
+horario
+duracion
+link
+
+T_ASISTENCIA_ALUMNO:(NO SE PUEDE)
+id_alumno --> FK T_ALUMNOS
+id_curso --> FK T_CURSOS
+id_asistencia --> Boolean (NO PERMITE EL FORMATO BOOLEAN, por lo que no tiene sentido esta tabla)
+
+T_RECURSOS:
+id_profesor --> FK T_PROFESORES
+id_recursos --> PK 
+puesto_informatico
+
+T_CURSOS_practica:
+1; master; estadistica; 1;
