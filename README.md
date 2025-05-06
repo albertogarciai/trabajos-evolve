@@ -63,10 +63,3 @@ It covers basic scripts, data analysis, SQL, FastAPI, web scraping, and more.
 
 This project is for **personal and academic purposes only**.  
 However, feel free to suggest improvements or report issues by opening an issue or pull request.
-
----
-
-## 📬 Contact
-
-**[Your Name or GitHub handle]**  
-[Optional: email or LinkedIn profile]  
