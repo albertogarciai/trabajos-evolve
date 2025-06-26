@@ -1,0 +1,85 @@
+# Ejecutar desde terminal en la carpeta del proyecto:
+# cp /Users/alberto/Github/gitignore_base.txt .gitignore
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# --- Entornos virtuales ---
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+.venv.bak/
+
+# --- Archivos secretos ---
+.env
+.env.*
+.env.local
+.env.production
+.env.development
+.secret
+secrets.json
+config.json
+token.json
+credentials.json
+*.key
+*.pem
+*.crt
+*.pfx
+*.p12
+
+# --- Dependencias empaquetadas ---
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+
+# --- Logs y dumps ---
+*.log
+*.out
+*.pid
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# --- VSCode ---
+.vscode/
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# --- Archivos temporales ---
+*.swp
+*~
+*.tmp
+*.bak
+*.orig
+
+# --- Bases de datos locales ---
+*.sqlite3
+*.sqlite*
+*.db
+*.db-journal
+*.bak.db
+
+# --- Resultados de tests ---
+htmlcov/
+coverage.xml
+.cache/
+nosetests.xml
+test-results/
+.pytest_cache/
+
+# --- Streamlit ---
+.streamlit/
